@@ -38,7 +38,6 @@ Requires:      php-soap
 Requires:      php-bcmath
 Requires:      php-process
 Requires:      php-pecl-imagick
-Requires:      php-pecl-xdebug
 BuildArch:     noarch
 
 Obsoletes: openshift-origin-cartridge-php-5.3
