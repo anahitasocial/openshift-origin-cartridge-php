@@ -10,19 +10,9 @@ License:       ASL 2.0
 URL:           https://www.openshift.com
 Source0:       http://mirror.openshift.com/pub/openshift-origin/source/%{name}/%{name}-%{version}.tar.gz
 Requires:      rubygem(openshift-origin-node)
-%if 0%{?fedora}%{?rhel} <= 6
-Requires:      php >= 5.3.2
-Requires:      php < 5.4
-Requires:      httpd < 2.4
-%endif
-%if 0%{?fedora} >= 19
-Requires:      php >= 5.5
-Requires:      php < 5.6
+Requires:      php >= 5.4
 Requires:      httpd > 2.3
 Requires:      httpd < 2.5
-%endif
-Requires:      php
-Requires:      php-devel
 Requires:      php-pdo
 Requires:      php-gd
 Requires:      php-xml
